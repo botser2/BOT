@@ -11,24 +11,21 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-if(!q) return reply("*කරුණාකර Link එකක් හො නමක් ලබා දෙන්න 🔎...*")
+if(!q) return reply("*GIVE ME LINK OR TITLE🔎...*")
 const search = await yts(q)
 const data = search.videos[0]
 const url = data.url
 
-let desc = `*◆ GHOST-MD SONG DOWNLOADING..... ◆*
+let desc = `▢───────────────────────────▢
+Ӂ ─── Ｓᴘᴇᴇᴅ ＭᴀＸＸ sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ 🔊
+▢───────────────────────────▢
+» ᴛɪᴛʟᴇ : ${data.title}
+» ᴀʙᴏᴜᴛ : ${data.description.}
+» ᴅᴜʀᴀᴛɪᴏɴ : ${data.timestamp}
+» ᴀɢᴏ : ${data.ago}
+» ᴠɪᴇᴡꜱ : ${data.views}
 
-| ➤ TITLE - ${data.title}
-
-| ➤ VIEWS - ${data.views}
-
-| ➤ DESCRIPTION - ${data.description}
-
-| ➤ TIME - ${data.timestamp}
-
-|➤ AGO - ${data.ago}
-
- ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢʜᴏꜱᴛ-ᴍᴅ
+ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ ©Ｓᴘᴇᴇᴅ ＭᴀＸＸ- ＭＤ₂ₒ₂₄
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
 
@@ -61,19 +58,16 @@ const search = await yts(q)
 const data = search.videos[0]
 const url = data.url
 
-let des = `*◆ GHOST-MD VIDEO DOWNLOADING.....◆*
+let des = `▢───────────────────────────▢
+Ӂ ─── Ｓᴘᴇᴇᴅ ＭᴀＸＸ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ 📽️
+▢───────────────────────────▢
+» ᴛɪᴛʟᴇ : ${data.title}
+» ᴀʙᴏᴜᴛ : ${data.description.}
+» ᴅᴜʀᴀᴛɪᴏɴ : ${data.timestamp}
+» ᴀɢᴏ : ${data.ago}
+» ᴠɪᴇᴡꜱ : ${data.views}
 
-| ➤ TITLE - ${data.title}
-
-| ➤ VIEWS - ${data.views}
-
-| ➤ DESCRIPTION - ${data.description}
-
-| ➤ TIME - ${data.timestamp}
-
-| ➤ AGO - ${data.ago}
-
-©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢʜᴏꜱᴛ-ᴍᴅ
+ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ ©Ｓᴘᴇᴇᴅ ＭᴀＸＸ- ＭＤ₂ₒ₂₄
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:des},{quoted:mek});
 
