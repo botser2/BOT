@@ -11,23 +11,16 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-let dec = `*👾 GHOST MD Repastitory Information*
+let dec = `*👋 Hello ${pushname}*
 
-*| ɴᴀᴍᴇ*: ɢʜᴏꜱᴛ-ᴍᴅ
-*| ᴏᴡɴᴇʀ*: ᴄʏʙᴇʀ ɢʜᴏꜱᴛ ( ɢʜᴏꜱᴛ-ᴍᴅ )
-*| ɴᴜᴍʙᴇʀ*: 94741140620
-*| ᴠᴇʀꜱɪᴏɴ*: 1.0.0
+*📍REPO LINK ❤️‍🔥👇*
 
+Hey User This Feature is not avaible (Comming Up next version) 
+-owner-
 
-*📡 REPO LINK*
-🔗◦https://github.com/GHOST-V1-MD/GHOST-MD.git
-
-*📌 SUBSCRIBE MY YOUTUBE CHANNEL*
-🔗◦ https://youtube.com/@cyberghost630?si=JVTDEQ8vO9Ksgv9M
-
-©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢʜᴏꜱᴛ-ᴍᴅ
+> ©Ｓᴘᴇᴇᴅ ＭᴀＸＸ- ＭＤ₂ₒ₂₄
 `
-await conn.sendMessage(from,{image:{url: `https://telegra.ph/file/397000a07a1deb7fad9c2.jpg`},caption:dec},{quoted:mek});
+await conn.sendMessage(from,{image:{url: `https://i.ibb.co/10pBNvp/Speed-Maxx.jpg`},caption:dec},{quoted:mek});
 
 }catch(e){
 console.log(e)
