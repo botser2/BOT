@@ -2,8 +2,8 @@ const { cmd } = require('../command');
 const axios = require('axios');
 const { Buffer } = require('buffer');
 
-const GOOGLE_API_KEY = 'AIzaSyDebFT-uY_f82_An6bnE9WvVcgVbzwDKgU'; // Replace with your Google API key
-const GOOGLE_CX = '45b94c5cef39940d1'; // Replace with your Google Custom Search Engine ID
+const GOOGLE_API_KEY = 'AIzaSyAx9RAI51WeFjUrZTTykNJGmOLy3JLhlVs'; // Replace with your Google API key
+const GOOGLE_CX = '33d6bf6220f0e4b11'; // Replace with your Google Custom Search Engine ID
 
 cmd({
     pattern: "img",
@@ -39,9 +39,9 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
             await conn.sendMessage(from, {
                 image: buffer,
                 caption: `
-            🌟 *-------「 GHOST-MD Image ${i + 1} from your search! 」-------* 🌟
+             Ｓᴘᴇᴇᴅ ＭᴀＸＸ- ＭＤ ɪᴍᴀɢᴇ ᴜᴘʟᴏᴀᴅᴇʀ ${i + 1} 
 
- ©ᴘᴏᴡᴇʀᴅ ʙʏ ɢʜᴏꜱᴛ ᴍᴅ
+> ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ ©Ｓᴘᴇᴇᴅ ＭᴀＸＸ- ＭＤ₂ₒ₂₄
 `
 }, { quoted: mek });
 }
